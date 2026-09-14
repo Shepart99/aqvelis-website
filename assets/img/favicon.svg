@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AQVELIS Logo">
+  <defs>
+    <linearGradient id="drop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4fb8dd"/>
+      <stop offset="100%" stop-color="#0b5f7d"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 4 C32 4 12 28 12 42 a20 20 0 0 0 40 0 C52 28 32 4 32 4 Z" fill="url(#drop)"/>
+  <path d="M22 42 a10 10 0 0 0 10 10" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+</svg>
