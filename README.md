@@ -31,7 +31,28 @@ darauf an mehreren Stellen deutlich hin.
 | `datenschutz.html` | Datenschutzerklärung |
 | `impressum.html` | Impressum |
 | `support.html` | Support-Informationen |
+| `nutzungsbedingungen.html` | Nutzungsbedingungen |
 | `account-loeschen.html` | Informationen zur Löschung von AQVELIS-Konten |
+
+### Zweisprachigkeit (DE/EN)
+
+Die deutschen Seiten liegen im Root, die englischen unter `en/`. Jede Seite
+enthält einen sichtbaren „DE | EN“-Link zur exakten Gegenseite (reines HTML,
+kein JavaScript, keine automatische Weiterleitung) sowie `canonical`- und
+`hreflang`-Angaben (`de`, `en`, `x-default` → deutsche Seite).
+
+| Deutsch | Englisch |
+| --- | --- |
+| `index.html` | `en/index.html` |
+| `support.html` | `en/support.html` |
+| `datenschutz.html` | `en/privacy.html` |
+| `impressum.html` | `en/legal-notice.html` |
+| `nutzungsbedingungen.html` | `en/terms.html` |
+| `account-loeschen.html` | `en/account-deletion.html` |
+
+Die englischen Rechtstexte sind Übersetzungen der deutschen Fassungen;
+inhaltliche Änderungen werden immer zuerst in der deutschen Seite
+vorgenommen und dann in die englische Seite übernommen.
 
 ## Lokale Vorschau
 
@@ -58,8 +79,9 @@ Alternativ kann `index.html` auch direkt im Browser geöffnet werden.
 ## Aktueller Stand
 
 Die rechtlichen Seiten (`datenschutz.html`, `impressum.html`,
-`account-loeschen.html`) enthalten die Betreiberangaben (Name, Anschrift,
+`nutzungsbedingungen.html`, `account-loeschen.html` sowie ihre englischen
+Gegenstücke unter `en/`) enthalten die Betreiberangaben (Name, Anschrift,
 Kontakt) sowie die Beschreibung der eingesetzten Dienste (u. a. Supabase,
-Mailtrap). AQVELIS selbst befindet sich weiterhin in Vorbereitung und ist
-noch nicht öffentlich verfügbar; die Website weist unter anderem auf
+Mailtrap). AQVELIS befindet sich derzeit in der Testphase; eine öffentliche
+Veröffentlichung ist in Vorbereitung. Die Website weist unter anderem auf
 `index.html` darauf hin.

@@ -219,6 +219,36 @@ section {
   border-bottom-color: var(--color-primary-light);
 }
 
+/* ---------- Language switch (DE | EN) ---------- */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.lang-switch a {
+  text-decoration: none;
+  color: var(--color-text-muted);
+  padding: 0.35rem 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+.lang-switch a:hover {
+  color: var(--color-primary-dark);
+  border-bottom-color: var(--color-primary-light);
+}
+
+.lang-switch a[aria-current="page"] {
+  color: var(--color-text);
+  border-bottom-color: var(--color-primary);
+}
+
+.lang-switch .lang-sep {
+  color: var(--color-text-muted);
+}
+
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-flex;
@@ -618,9 +648,36 @@ section {
     justify-content: center;
   }
 
+  /* Keep the language switch on the brand row so the sticky header
+     doesn't grow by an extra line on small screens. */
+  .site-header .brand {
+    order: 1;
+  }
+
+  .lang-switch {
+    order: 2;
+  }
+
+  .main-nav {
+    order: 3;
+    flex-basis: 100%;
+  }
+
   .status-section {
     margin-inline: var(--space-2);
     padding: var(--space-4) var(--space-2);
+  }
+
+  /* Single long words (e.g. "Nutzungsbedingungen") must not push the
+     page wider than a small screen. */
+  .page-header h1 {
+    overflow-wrap: anywhere;
+  }
+
+  /* The 18rem column minimum is wider than the content box on very narrow
+     screens; never let a single column exceed the available width. */
+  .areas-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
   }
 
   .footer-nav ul {
